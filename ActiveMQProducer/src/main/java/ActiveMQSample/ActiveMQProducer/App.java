@@ -11,7 +11,9 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 
 public class App 
 {
+	//rollback - session rollback in consumer (Error Message)
 	private static final String MESSAGE_TO_SEND = "error_message";
+	//No rollback - session commit in consumer (Success Message)
 //	private static final String MESSAGE_TO_SEND = "success message";
 	private static final String Q_NAME = "TEST";
 	private static final String ACTIVEMQ_CONNECTION = "tcp://localhost:61617";
